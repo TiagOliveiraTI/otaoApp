@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import Header from '../components/Header'
-import WelcomeContainer from '../components/WelcomeContainer';
+import Header from '../../components/Header'
+import WelcomeContainer from '../../components/WelcomeContainer';
 import './Home.css';
 
 const Home: React.FC = () => {
