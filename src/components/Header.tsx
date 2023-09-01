@@ -1,4 +1,4 @@
-import { IonButtons, IonButton,IonHeader, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonButton, IonHeader, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
 
 const Header: React.FC = () => {
     return (
@@ -6,8 +6,10 @@ const Header: React.FC = () => {
             <IonToolbar color={'primary'}>
                 <IonTitle>OtaoApp</IonTitle>
                 <IonButtons slot="end">
-                    <IonButton>Login</IonButton>
-                    <IonButton>Registrar</IonButton>
+                    <IonButton routerLink="/login">Login</IonButton>
+                    <IonButton routerLink="/register" color={"secondary"} className="ion-margin-top" type="button" expand="block">
+                        Criar conta
+                    </IonButton>
                 </IonButtons>
             </IonToolbar>
         </IonHeader>

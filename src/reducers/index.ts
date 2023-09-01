@@ -1,8 +1,17 @@
-import { combineReducers } from 'redux';
+import {
+  Action,
+  combineReducers,
+  configureStore,
+  PreloadedState,
+  ThunkAction,
+} from '@reduxjs/toolkit'
+
+import { authSlice } from '../features/auth/authSlice';
 // Importe seus reducers individuais aqui
 
 const rootReducer = combineReducers({
-  // Adicione seus reducers individuais aqui
+  auth: authSlice.reducer
+  
 });
 
 export default rootReducer;
